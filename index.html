@@ -125,6 +125,53 @@
         top: 50%;
         transform: translateY(-50%);
       }
+
+      .storage {
+        display: flex;
+        justify-content: space-between;
+
+        margin-top: 8px;
+
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+      .popup {
+        position: absolute;
+        right: 40px;
+        top: -45px;
+        background: white;
+        width: 180px;
+        height: 72px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .popup::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -18px;
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-top: 20px solid white;
+      }
+
+      .number {
+        font-size: 40px;
+        font-weight: 700;
+      }
+
+      .text {
+        font-size: 12px;
+        color: gray;
+        font-weight: bold;
+      }
     </style>
   </head>
   <body>
