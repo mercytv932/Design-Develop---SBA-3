@@ -44,7 +44,12 @@ main {
 .logo-img {
   width: 135px;
   height: auto;
-  margin-bottom: 30px;
+}
+
+.left2 {
+  display: flex;
+  gap: 16px;
+  align-items: center;
 }
 
 .left2 div {
