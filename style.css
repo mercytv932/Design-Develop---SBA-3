@@ -47,9 +47,7 @@ main {
 }
 
 .left2 {
-  display: flex;
   gap: 16px;
-  align-items: center;
 }
 
 .left2 div {
@@ -67,10 +65,6 @@ main {
   background-color: #1e2d69;
   border-radius: 10px;
   padding: 40px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .right-container p {
@@ -83,12 +77,13 @@ main {
   color: white;
 }
 
-.progress {
+.progress-track {
   margin-top: 18px;
+  width: 100%;
   height: 20px;
   background-color: #0c122c;
   border-radius: 20px;
-  padding: 3px;
+  padding: 1px;
 }
 
 .progress-fill {
@@ -96,7 +91,6 @@ main {
   height: 100%;
   background: linear-gradient(to right, #ffa399, #ff4e97);
   border-radius: 20px;
-  position: relative;
 }
 
 .dot {
@@ -104,14 +98,12 @@ main {
   height: 12px;
   background: white;
   border-radius: 50%;
-  position: absolute;
-  right: 3px;
+  right: 1px;
   top: 50%;
   transform: translateY(-50%);
 }
 
 .storage {
-  display: flex;
   justify-content: space-between;
 
   margin-top: 8px;
@@ -129,9 +121,6 @@ main {
   width: 180px;
   height: 72px;
   border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 8px;
 }
 

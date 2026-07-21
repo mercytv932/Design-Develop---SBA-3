@@ -21,7 +21,7 @@
   </head>
   <body>
     <main>
-      <section class="left-container d-flex flex flex-column align-items-start">
+      <section class="left-container d-flex flex-column align-items-start">
         <img class="logo-img" src="images/logo.svg" alt="logo" />
 
         <div class="left2 d-flex align-items-center">
@@ -52,21 +52,25 @@
         </div>
       </section>
 
-      <section class="right-container">
+      <section
+        class="right-container position-relative d-flex flex-column justify-content-center"
+      >
         <p>You've used 815 GB of your storage</p>
 
-        <div class="progress">
-          <div class="progress-fill">
-            <span class="dot"></span>
+        <div class="progress-track">
+          <div class="progress-fill position-relative">
+            <span class="dot position-absolute"></span>
           </div>
         </div>
 
-        <div class="storage">
+        <div class="storage d-flex">
           <span>0 GB</span>
           <span>1000 GB</span>
         </div>
 
-        <div class="popup">
+        <div
+          class="popup position-absolute d-flex justify-content-center align-items-center"
+        >
           <span class="number">185</span>
           <span class="text">GB LEFT</span>
         </div>
