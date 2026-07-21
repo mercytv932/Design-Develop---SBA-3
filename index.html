@@ -24,7 +24,7 @@
         color: hsl(228, 45%, 44%);
       }
 
-      *{
+      * {
         box-sizing: border-box;
       }
       body {
@@ -37,12 +37,12 @@
       }
 
       main {
-      width: 922px;
-      /* height: 201px; */
-      background-color: rgb(110, 124, 124);
-      display: flex;
-      align-items: flex-end;
-      gap: 30px;
+        width: 922px;
+        /* height: 201px; */
+        background-color: rgb(110, 124, 124);
+        display: flex;
+        align-items: flex-end;
+        gap: 30px;
       }
 
       /* left */
@@ -60,7 +60,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        background-color: #1E2D69;
+        background-color: #1e2d69;
         border-radius: 10px 100px 10px 10px;
       }
 
@@ -84,19 +84,16 @@
         background-color: #0c122c;
         border-radius: 10px;
       }
-      
+
       /* right */
 
       .right-container {
         width: 540px;
         height: 155px;
-
-        background-color: #1E2D69;
+        background-color: #1e2d69;
         border-radius: 10px;
-
         padding: 40px;
         position: relative;
-
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -113,10 +110,20 @@
       .progress-fill {
         width: 81.5%;
         height: 100%;
-
         background: linear-gradient(to right, #ffa399, #ff4e97);
         border-radius: 20px;
         position: relative;
+      }
+
+      .dot {
+        width: 12px;
+        height: 12px;
+        background: white;
+        border-radius: 50%;
+        position: absolute;
+        right: 3px;
+        top: 50%;
+        transform: translateY(-50%);
       }
     </style>
   </head>
@@ -131,23 +138,39 @@
    -->
 
     <main>
+      <section class="left-container">
+        <img class="logo-img" src="images/logo.svg" alt="logo" />
 
-        <section class="left-container">
-            <img class="logo-img" src="images/logo.svg" alt="logo">
-
-          <div class="left2">
-            <div><img src="images/icon-document.svg" alt="" width="19.18px" height="23.98px"></div>
-            <div><img src="images/icon-folder.svg" alt="" width="24px" height="19.2px"></div>
-            <div><img src="images/icon-upload.svg" alt="" width="24px" height="16px"></div>
+        <div class="left2">
+          <div>
+            <img
+              src="images/icon-document.svg"
+              alt=""
+              width="19.18px"
+              height="23.98px"
+            />
           </div>
-
-        </section>
-
+          <div>
+            <img
+              src="images/icon-folder.svg"
+              alt=""
+              width="24px"
+              height="19.2px"
+            />
+          </div>
+          <div>
+            <img
+              src="images/icon-upload.svg"
+              alt=""
+              width="24px"
+              height="16px"
+            />
+          </div>
+        </div>
+      </section>
 
       <section class="right-container">
-
         <p>You've used 815 GB of your storage</p>
-
 
         <div class="progress">
           <div class="prohress-fill">
@@ -155,27 +178,16 @@
           </div>
         </div>
 
-
         <div class="storage">
           <span>0 GB</span>
           <span>1000 GB</span>
         </div>
 
-
         <div class="popup">
           <span class="number"></span>
           <span class="text"></span>
         </div>
-
       </section>
-
-
-
-
-
-
-
-
     </main>
   </body>
 </html>
