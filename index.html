@@ -39,7 +39,6 @@
       main {
         width: 922px;
         /* height: 201px; */
-        background-color: rgb(110, 124, 124);
         display: flex;
         align-items: flex-end;
         gap: 30px;
@@ -97,6 +96,16 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+      }
+
+      .right-container p {
+        margin: 0;
+        color: #c4c8e2;
+        font-size: 14px;
+      }
+
+      .right-container strong {
+        color: white;
       }
 
       .progress {
@@ -220,7 +229,7 @@
         <p>You've used 815 GB of your storage</p>
 
         <div class="progress">
-          <div class="prohress-fill">
+          <div class="progress-fill">
             <span class="dot"></span>
           </div>
         </div>
@@ -231,8 +240,8 @@
         </div>
 
         <div class="popup">
-          <span class="number"></span>
-          <span class="text"></span>
+          <span class="number">185</span>
+          <span class="text">GB LEFT</span>
         </div>
       </section>
     </main>
